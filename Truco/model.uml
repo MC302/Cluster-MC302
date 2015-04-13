@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_aOw_kOIDEeSmtINY4aLMow" name="Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_aOw_keIDEeSmtINY4aLMow">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_cDxZYOIDEeSmtINY4aLMow" name="Deck">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zuBBIOIDEeSmtINY4aLMow" name="drawCard">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_cgR5wOIEEeSmtINY4aLMow" type="_c95fUOIDEeSmtINY4aLMow" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0CIP8OIDEeSmtINY4aLMow" name="shuffle"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_c95fUOIDEeSmtINY4aLMow" name="Card">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_eRUZkOIEEeSmtINY4aLMow" name="getNumber">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_1fRt8OIEEeSmtINY4aLMow" type="_vI8eAOIEEeSmtINY4aLMow" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_efaf8OIEEeSmtINY4aLMow" name="getSuit">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_-ay3cOIEEeSmtINY4aLMow" type="_5R4c4OIEEeSmtINY4aLMow" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-Ok10OIDEeSmtINY4aLMow" name="CardHolder">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_M9C_8OIFEeSmtINY4aLMow" name="addCard">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_cfc94OIFEeSmtINY4aLMow" name="c" type="_c95fUOIDEeSmtINY4aLMow"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_NHxpQOIFEeSmtINY4aLMow" name="discardCard">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ft1lcOIFEeSmtINY4aLMow" name="c" type="_c95fUOIDEeSmtINY4aLMow"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_NTjbcOIFEeSmtINY4aLMow" name="getHand">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_XhNs0OIGEeSmtINY4aLMow" type="_BeIQIOIGEeSmtINY4aLMow" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Nf7DgOIFEeSmtINY4aLMow" name="cleanHand"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vI8eAOIEEeSmtINY4aLMow" name="CardNumber"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5R4c4OIEEeSmtINY4aLMow" name="Suit"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_BeIQIOIGEeSmtINY4aLMow" name="List"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Z6f4YOIGEeSmtINY4aLMow" name="Player">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_thhiUOIGEeSmtINY4aLMow" name="getName">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_xaDTEOIGEeSmtINY4aLMow" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_adnMgOIGEeSmtINY4aLMow" name="PointHolder">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_2GplEOIGEeSmtINY4aLMow" name="getPoints">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_GCgk0OIHEeSmtINY4aLMow" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_2YaDcOIGEeSmtINY4aLMow" name="setPoints">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_IuC-AOIHEeSmtINY4aLMow" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_LFMbkOIHEeSmtINY4aLMow" name="points">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_avveUOIGEeSmtINY4aLMow" name="Team">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Pm5sMOIHEeSmtINY4aLMow" name="getPlayers">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_W75j0OIHEeSmtINY4aLMow" type="_BeIQIOIGEeSmtINY4aLMow" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_ZEg2IOIHEeSmtINY4aLMow" name="Croupier"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_ZRe7IOIHEeSmtINY4aLMow" name="Table">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5qGBMOIHEeSmtINY4aLMow" name="getWinningCard">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_BLQFgOIIEeSmtINY4aLMow" type="_c95fUOIDEeSmtINY4aLMow" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_5zyIsOIHEeSmtINY4aLMow" name="getWinningTeam">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_FvvkYOIIEeSmtINY4aLMow" type="_Z6f4YOIGEeSmtINY4aLMow" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_591ckOIHEeSmtINY4aLMow" name="playCard">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_PbAv0OIIEeSmtINY4aLMow" name="cardPlayed" type="_c95fUOIDEeSmtINY4aLMow"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_RM5kMOIIEeSmtINY4aLMow" name="player" type="_Z6f4YOIGEeSmtINY4aLMow"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6HE4IOIHEeSmtINY4aLMow" name="getAllCards">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_VB-_YOIIEeSmtINY4aLMow" type="_BeIQIOIGEeSmtINY4aLMow" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_6RzhcOIHEeSmtINY4aLMow" name="cleanTable"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_zfviUOIIEeSmtINY4aLMow" memberEnd="_zfviVOIIEeSmtINY4aLMow _zfviUeIIEeSmtINY4aLMow">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zfviUeIIEeSmtINY4aLMow" name="player" type="_Z6f4YOIGEeSmtINY4aLMow" association="_zfviUOIIEeSmtINY4aLMow">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zfviUuIIEeSmtINY4aLMow" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zfviU-IIEeSmtINY4aLMow" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_zfviVOIIEeSmtINY4aLMow" name="team" type="_avveUOIGEeSmtINY4aLMow" association="_zfviUOIIEeSmtINY4aLMow">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zfviVeIIEeSmtINY4aLMow" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zfviVuIIEeSmtINY4aLMow" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
