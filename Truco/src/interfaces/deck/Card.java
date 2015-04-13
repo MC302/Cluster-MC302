@@ -1,9 +1,11 @@
 package interfaces.deck;
 
+
+import java.util.Comparator;
 import cards.CardNumber;
 import cards.Suit;
 
-public interface Card {
+public interface Card{
 	/**
 	 * Get the Number of the card
 	 * @return
