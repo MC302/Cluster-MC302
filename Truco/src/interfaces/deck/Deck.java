@@ -1,4 +1,5 @@
-package interfaces;
+package interfaces.deck;
+
 
 public interface Deck {
 	/**
