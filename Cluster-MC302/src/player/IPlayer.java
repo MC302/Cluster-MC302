@@ -3,12 +3,13 @@ package player;
 import java.util.Vector;
 
 import deck.card.Card;
+import deck.card.ICard;
 
 public interface IPlayer {
 	
-	public void addCard(Card card);
+	public void addCard(ICard card);
 	public Vector<Card> showHand();
-	public Card showCard();
+	public ICard showCard();
 	public int howManyCards();
 
 }

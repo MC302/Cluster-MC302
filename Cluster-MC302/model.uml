@@ -43,7 +43,22 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_urOWcOLkEeSYzPt8eaFKDw" name="resetOwner"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_IQFQwOLlEeSYzPt8eaFKDw" name="IPlayer"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_IQFQwOLlEeSYzPt8eaFKDw" name="IPlayer">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_lhKTQOLnEeSYzPt8eaFKDw" name="addCard">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ta3acOLnEeSYzPt8eaFKDw" name="card" type="_6RGp4OLjEeSYzPt8eaFKDw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_lvb_0OLnEeSYzPt8eaFKDw" name="showHand">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zovR8OLnEeSYzPt8eaFKDw" type="_wM3oAOLnEeSYzPt8eaFKDw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_l6_vkOLnEeSYzPt8eaFKDw" name="showHand">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_2s0G8OLnEeSYzPt8eaFKDw" type="_6RGp4OLjEeSYzPt8eaFKDw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mHFq0OLnEeSYzPt8eaFKDw" name="howManyCards">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_6IFT8OLnEeSYzPt8eaFKDw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_W-JnsOLlEeSYzPt8eaFKDw" name="IManager">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_b_gBsOLlEeSYzPt8eaFKDw" name="connect">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_nvVs8OLlEeSYzPt8eaFKDw" name="game" type="_gxHWkOLlEeSYzPt8eaFKDw"/>
@@ -67,7 +82,15 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_EEeWgOLmEeSYzPt8eaFKDw" name="endGame"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_gxHWkOLlEeSYzPt8eaFKDw" name="IGame"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_gxHWkOLlEeSYzPt8eaFKDw" name="IGame">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aLbxIOLnEeSYzPt8eaFKDw" name="canFinish">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_dxZyQOLnEeSYzPt8eaFKDw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aYLMoOLnEeSYzPt8eaFKDw" name="finish"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aiUnIOLnEeSYzPt8eaFKDw" name="run"/>
+  </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_hHlV0OLlEeSYzPt8eaFKDw" name="ITable">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_OHD1wOLmEeSYzPt8eaFKDw" name="getStacks">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_VYuskOLmEeSYzPt8eaFKDw" name="p" type="_IQFQwOLlEeSYzPt8eaFKDw"/>
@@ -91,6 +114,35 @@
     </ownedOperation>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_PsEEsOLmEeSYzPt8eaFKDw" name="cleanTable"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_W1nhUOLmEeSYzPt8eaFKDw" name="ICardStack"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_W1nhUOLmEeSYzPt8eaFKDw" name="ICardStack">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__wGsYOLnEeSYzPt8eaFKDw" name="getName">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_EA9dkOLoEeSYzPt8eaFKDw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__9aIkOLnEeSYzPt8eaFKDw" name="getId">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Hgth8OLoEeSYzPt8eaFKDw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AI7cEOLoEeSYzPt8eaFKDw" name="isPlayerAllowed">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_KcR7MOLoEeSYzPt8eaFKDw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_M5WakOLoEeSYzPt8eaFKDw" name="player" type="_IQFQwOLlEeSYzPt8eaFKDw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_AW_GMOLoEeSYzPt8eaFKDw" name="getCards">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_QMBFMOLoEeSYzPt8eaFKDw" type="_sTVAEOLmEeSYzPt8eaFKDw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_sTVAEOLmEeSYzPt8eaFKDw" name="List"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wM3oAOLnEeSYzPt8eaFKDw" name="Vector"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_agu2QOLoEeSYzPt8eaFKDw" client="_50e_UOLjEeSYzPt8eaFKDw" supplier="_6RGp4OLjEeSYzPt8eaFKDw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_cS5XcOLoEeSYzPt8eaFKDw" client="_hHlV0OLlEeSYzPt8eaFKDw" supplier="_6RGp4OLjEeSYzPt8eaFKDw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_eEDzEOLoEeSYzPt8eaFKDw" client="_hHlV0OLlEeSYzPt8eaFKDw" supplier="_W1nhUOLmEeSYzPt8eaFKDw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_hmnT0OLoEeSYzPt8eaFKDw" client="_W-JnsOLlEeSYzPt8eaFKDw" supplier="_hHlV0OLlEeSYzPt8eaFKDw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_iHt1wOLoEeSYzPt8eaFKDw" client="_W-JnsOLlEeSYzPt8eaFKDw" supplier="_50e_UOLjEeSYzPt8eaFKDw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_izgkwOLoEeSYzPt8eaFKDw" client="_W-JnsOLlEeSYzPt8eaFKDw" supplier="_6RGp4OLjEeSYzPt8eaFKDw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_ju4A0OLoEeSYzPt8eaFKDw" client="_gxHWkOLlEeSYzPt8eaFKDw" supplier="_W-JnsOLlEeSYzPt8eaFKDw"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_lUXX8OLoEeSYzPt8eaFKDw" client="_W-JnsOLlEeSYzPt8eaFKDw" supplier="_IQFQwOLlEeSYzPt8eaFKDw"/>
 </uml:Model>

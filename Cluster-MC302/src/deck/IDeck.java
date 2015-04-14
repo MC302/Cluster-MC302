@@ -1,9 +1,10 @@
 package deck;
 
 import deck.card.Card;
+import deck.card.ICard;
 
 public interface IDeck {
-	public Card draw();
+	public ICard draw();
 	public int cardsLeft();
 	public void shuffle();
 	public void reshuffle();
