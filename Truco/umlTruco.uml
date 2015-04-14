@@ -38,7 +38,7 @@
       </ownedParameter>
     </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interface" xmi:id="_PEqL4OI1EeSHqrTXxzSRXA" name="Croupier"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_PEqL4OI1EeSHqrTXxzSRXA" name="Manager"/>
   <packagedElement xmi:type="uml:Interface" xmi:id="_PWF6IOI1EeSHqrTXxzSRXA" name="Card">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_z9n3sOI1EeSHqrTXxzSRXA" name="getNumber">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_2rrZYOI1EeSHqrTXxzSRXA" type="_s1qWgOI1EeSHqrTXxzSRXA" direction="return"/>

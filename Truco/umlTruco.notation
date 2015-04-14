@@ -297,7 +297,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tEjuJOI1EeSHqrTXxzSRXA"/>
       </children>
       <element xmi:type="uml:Class" href="umlTruco.uml#_tEgq0OI1EeSHqrTXxzSRXA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tEigAeI1EeSHqrTXxzSRXA" x="136" y="9" width="87" height="81"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tEigAeI1EeSHqrTXxzSRXA" x="135" y="9" width="99" height="76"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_BhjzQeI1EeSHqrTXxzSRXA" name="diagram_compatibility_version" stringValue="1.0.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_BhjzQuI1EeSHqrTXxzSRXA"/>
