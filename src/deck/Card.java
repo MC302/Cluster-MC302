@@ -1,24 +1,23 @@
 package deck;
-import java.util.*;
 
-public class Card implements Comparable{
-	public enum Naipe
+public class Card implements ICard{
+	public enum Suit
 	{
 		ouro(1),
 		espadas(2),
 		copas(3),
 		paus(4);
 		
-		private int valor;
+		private int value;
 		
-		Naipe(int valor)
+		Suit(int value)
 		{
-			this.valor=valor;
+			this.value=value;
 		}
 		
-		public int getValor()
+		public int getValue()
 		{
-			return this.valor;
+			return this.value;
 		}
 	}
 	public enum Face
@@ -37,34 +36,32 @@ public class Card implements Comparable{
 		dama(12),
 		reis(13);
 		
-		private int valor;
+		private int value;
 		
-		Face(int valor)
+		Face(int value)
 		{
-			this.valor=valor;
+			this.value=value;
 		}
 		
-		public int getValor()
+		public int getValue()
 		{
-			return this.valor;
+			return this.value;
 		}
 		
 	}
 
-	private Naipe naipe;
+	private Suit suit;
 	private Face face;
 
-	public Card(Naipe naipe, Face face) {
+	public Card(Suit suit, Face face) {
 		super();
-		this.naipe = naipe;
+		this.suit = suit;
 		this.face = face;
 	}
 	 
-	@Override
-	public int compareTo(Object o) {
-		// TODO Auto-generated method stub
-		this.equals(o);
-		return 0;
+	public static Card[] simpleDeck()
+	{
+		return null;
 	}
 	
 	@Override
@@ -73,18 +70,51 @@ public class Card implements Comparable{
 			return true;
 		if (obj.getClass()==this.getClass())
 		{
-			Card other=(Card) obj;
+			return this.equals((Card)obj);
+			//TODO
 			
 		}
 		return false;
 	}
 
-	public Naipe getNaipe() {
-		return naipe;
+	public Suit getSuit() {
+		return suit;
 	}
 	
 	public Face getFace() {
 		return face;
+	}
+
+	@Override
+	public int[] getValues() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int compareTo(Card card) {
+		if (this.getValue()>card.getValue())
+			return 1;
+		else if (this.getValue()<card.getValue())
+			return -1;
+		return 0;
+	}
+
+	@Override
+	public int getValue() {
+		return this.face.value;
+	}
+
+	@Override
+	public boolean equals(Card card) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return null;
 	}
 
 	
