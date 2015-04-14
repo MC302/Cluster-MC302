@@ -3,4 +3,94 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_q28pAeLjEeSYzPt8eaFKDw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_50e_UOLjEeSYzPt8eaFKDw" name="IDeck">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_EzwwUOLkEeSYzPt8eaFKDw" name="draw">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Xplm0OLkEeSYzPt8eaFKDw" type="_6RGp4OLjEeSYzPt8eaFKDw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FbNK0OLkEeSYzPt8eaFKDw" name="cardsLeft">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_iOYbQOLkEeSYzPt8eaFKDw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FkwIYOLkEeSYzPt8eaFKDw" name="shuffle"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FxF7QOLkEeSYzPt8eaFKDw" name="reshuffle"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_F9uCAOLkEeSYzPt8eaFKDw" name="cut">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_pDeDwOLkEeSYzPt8eaFKDw" name="height">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_GaKGYOLkEeSYzPt8eaFKDw" name="cut"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_6RGp4OLjEeSYzPt8eaFKDw" name="ICard">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_s6h04OLkEeSYzPt8eaFKDw" name="getValue">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_zMErcOLkEeSYzPt8eaFKDw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_tGRK0OLkEeSYzPt8eaFKDw" name="getValues">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_8Oj_oOLkEeSYzPt8eaFKDw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_tP5A4OLkEeSYzPt8eaFKDw" name="equals">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ag2UMOLlEeSYzPt8eaFKDw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+      </ownedParameter>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_DpNzUOLlEeSYzPt8eaFKDw" name="card" type="_6RGp4OLjEeSYzPt8eaFKDw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_uE7LcOLkEeSYzPt8eaFKDw" name="resetOwner">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_L4YNIOLlEeSYzPt8eaFKDw" name="owner" type="_IQFQwOLlEeSYzPt8eaFKDw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_urOWcOLkEeSYzPt8eaFKDw" name="resetOwner"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_IQFQwOLlEeSYzPt8eaFKDw" name="IPlayer"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_W-JnsOLlEeSYzPt8eaFKDw" name="IManager">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_b_gBsOLlEeSYzPt8eaFKDw" name="connect">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_nvVs8OLlEeSYzPt8eaFKDw" name="game" type="_gxHWkOLlEeSYzPt8eaFKDw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_pOgZoOLlEeSYzPt8eaFKDw" name="deck" type="_50e_UOLjEeSYzPt8eaFKDw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_q0VvAOLlEeSYzPt8eaFKDw" name="player" type="_IQFQwOLlEeSYzPt8eaFKDw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_tUsy8OLlEeSYzPt8eaFKDw" name="table" type="_hHlV0OLlEeSYzPt8eaFKDw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cL77MOLlEeSYzPt8eaFKDw" name="initializeStandartComponents"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cYUxYOLlEeSYzPt8eaFKDw" name="drawCardForPlayer">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_0NOJ8OLlEeSYzPt8eaFKDw" name="player" type="_IQFQwOLlEeSYzPt8eaFKDw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cy4mcOLlEeSYzPt8eaFKDw" name="putCardOnTable">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_5rmeMOLlEeSYzPt8eaFKDw" name="card" type="_6RGp4OLjEeSYzPt8eaFKDw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_8thXEOLlEeSYzPt8eaFKDw" name="visibility">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_dE6KkOLlEeSYzPt8eaFKDw" name="getPlayerInformation">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bobx4OLmEeSYzPt8eaFKDw" name="player" type="_IQFQwOLlEeSYzPt8eaFKDw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_CxdPcOLmEeSYzPt8eaFKDw" type="_IQFQwOLlEeSYzPt8eaFKDw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_EEeWgOLmEeSYzPt8eaFKDw" name="endGame"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_gxHWkOLlEeSYzPt8eaFKDw" name="IGame"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_hHlV0OLlEeSYzPt8eaFKDw" name="ITable">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OHD1wOLmEeSYzPt8eaFKDw" name="getStacks">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_VYuskOLmEeSYzPt8eaFKDw" name="p" type="_IQFQwOLlEeSYzPt8eaFKDw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_ZsxUoOLmEeSYzPt8eaFKDw" type="_sTVAEOLmEeSYzPt8eaFKDw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OR0UQOLmEeSYzPt8eaFKDw" name="getAllStacks">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_dLxLEOLmEeSYzPt8eaFKDw" type="_sTVAEOLmEeSYzPt8eaFKDw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OdicEOLmEeSYzPt8eaFKDw" name="newStack">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_jzOAMOLmEeSYzPt8eaFKDw" name="permissionGroup" type="_sTVAEOLmEeSYzPt8eaFKDw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OoYaIOLmEeSYzPt8eaFKDw" name="addToStack">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_8ppHMOLmEeSYzPt8eaFKDw" name="card" type="_6RGp4OLjEeSYzPt8eaFKDw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_AwUosOLnEeSYzPt8eaFKDw" name="stackId">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_OyJaIOLmEeSYzPt8eaFKDw" name="addToStack">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_FThuIOLnEeSYzPt8eaFKDw" name="card" type="_6RGp4OLjEeSYzPt8eaFKDw"/>
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_IYNAEOLnEeSYzPt8eaFKDw" name="stack" type="_W1nhUOLmEeSYzPt8eaFKDw"/>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_PsEEsOLmEeSYzPt8eaFKDw" name="cleanTable"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_W1nhUOLmEeSYzPt8eaFKDw" name="ICardStack"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_sTVAEOLmEeSYzPt8eaFKDw" name="List"/>
 </uml:Model>
