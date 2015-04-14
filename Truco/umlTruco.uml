@@ -22,6 +22,8 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_O2DIIOI1EeSHqrTXxzSRXA" name="PointHolder">
+    <generalization xmi:type="uml:Generalization" xmi:id="_A0tiEOI6EeSHqrTXxzSRXA" general="_OmfCIOI1EeSHqrTXxzSRXA"/>
+    <generalization xmi:type="uml:Generalization" xmi:id="_BjghwOI6EeSHqrTXxzSRXA" general="_NkeLgOI1EeSHqrTXxzSRXA"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_du26AOI2EeSHqrTXxzSRXA" name="getPoints">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_iVV88OI2EeSHqrTXxzSRXA" direction="return">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
@@ -46,6 +48,7 @@
     </ownedOperation>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_UrkxEOI1EeSHqrTXxzSRXA" name="CardHolder">
+    <generalization xmi:type="uml:Generalization" xmi:id="_ClXnYOI6EeSHqrTXxzSRXA" general="_NkeLgOI1EeSHqrTXxzSRXA"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_GkV7MOI2EeSHqrTXxzSRXA" name="addCard">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_NUh1kOI2EeSHqrTXxzSRXA" name="card" type="_PWF6IOI1EeSHqrTXxzSRXA"/>
     </ownedOperation>
@@ -95,6 +98,39 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_qXGXdOI3EeSHqrTXxzSRXA" name="deck" type="_OVf_0OI1EeSHqrTXxzSRXA" association="_qXGXcOI3EeSHqrTXxzSRXA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qXGXdeI3EeSHqrTXxzSRXA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qXGXduI3EeSHqrTXxzSRXA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LrsSsOI6EeSHqrTXxzSRXA" memberEnd="_LrsStOI6EeSHqrTXxzSRXA _LrsSseI6EeSHqrTXxzSRXA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LrsSseI6EeSHqrTXxzSRXA" name="table" type="_U_ZsAOI1EeSHqrTXxzSRXA" association="_LrsSsOI6EeSHqrTXxzSRXA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LrsSsuI6EeSHqrTXxzSRXA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LrsSs-I6EeSHqrTXxzSRXA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_LrsStOI6EeSHqrTXxzSRXA" name="croupier" type="_PEqL4OI1EeSHqrTXxzSRXA" association="_LrsSsOI6EeSHqrTXxzSRXA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LrsSteI6EeSHqrTXxzSRXA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LrsStuI6EeSHqrTXxzSRXA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MMerkOI6EeSHqrTXxzSRXA" memberEnd="_MMerlOI6EeSHqrTXxzSRXA _MMerkeI6EeSHqrTXxzSRXA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MMerkeI6EeSHqrTXxzSRXA" name="player" type="_NkeLgOI1EeSHqrTXxzSRXA" association="_MMerkOI6EeSHqrTXxzSRXA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MMerkuI6EeSHqrTXxzSRXA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MMerk-I6EeSHqrTXxzSRXA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MMerlOI6EeSHqrTXxzSRXA" name="croupier" type="_PEqL4OI1EeSHqrTXxzSRXA" association="_MMerkOI6EeSHqrTXxzSRXA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MMerleI6EeSHqrTXxzSRXA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MMerluI6EeSHqrTXxzSRXA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MuHZAOI6EeSHqrTXxzSRXA" memberEnd="_MuHZBOI6EeSHqrTXxzSRXA _MuHZAeI6EeSHqrTXxzSRXA">
+    <name xsi:nil="true"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MuHZAeI6EeSHqrTXxzSRXA" name="deck" type="_OVf_0OI1EeSHqrTXxzSRXA" association="_MuHZAOI6EeSHqrTXxzSRXA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MuHZAuI6EeSHqrTXxzSRXA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MuHZA-I6EeSHqrTXxzSRXA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MuHZBOI6EeSHqrTXxzSRXA" name="croupier" type="_PEqL4OI1EeSHqrTXxzSRXA" association="_MuHZAOI6EeSHqrTXxzSRXA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MuHZBeI6EeSHqrTXxzSRXA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MuHZBuI6EeSHqrTXxzSRXA" value="1"/>
     </ownedEnd>
   </packagedElement>
 </uml:Model>
