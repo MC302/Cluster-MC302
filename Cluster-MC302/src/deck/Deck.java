@@ -1,5 +1,7 @@
 package deck;
 
+import deck.card.Card;
+
 public class Deck implements IDeck{
 	
 	Card[] cards;
