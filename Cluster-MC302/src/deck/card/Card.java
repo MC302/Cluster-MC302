@@ -1,5 +1,7 @@
 package deck.card;
 
+import player.IPlayer;
+
 public class Card implements ICard{
 	public enum Suit
 	{
@@ -121,6 +123,18 @@ public class Card implements ICard{
 	public String toString()
 	{
 		return null;
+	}
+
+	@Override
+	public void resetOwner(IPlayer owner) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void resetOwner() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	

@@ -22,7 +22,7 @@ public class Manager {
 	{
 		if (this.game != null && this.game.canFinish())
 		{
-			this.game.finishGame();
+			this.game.finish();
 			this.game=game;
 			return true;
 		}
