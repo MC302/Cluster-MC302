@@ -1,4 +1,4 @@
-package deck;
+package deck.card;
 
 public class Card implements ICard{
 	public enum Suit
@@ -34,9 +34,15 @@ public class Card implements ICard{
 		dez(10),
 		valete(11),
 		dama(12),
-		reis(13);
+		rei(13),
+		king(rei);
 		
 		private int value;
+		
+		Face(Face face)
+		{
+			this.value=face.value;
+		}
 		
 		Face(int value)
 		{

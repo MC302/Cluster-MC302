@@ -1,14 +1,17 @@
 package deck;
 
+import deck.card.Card;
+
 public class Deck implements IDeck{
 	
 	Card[] cards;
 
-	public Card pickCard() {
-		return null;
+	public Deck()
+	{
+		
 	}
 	
-	public Deck()
+	public Deck(int decks)
 	{
 		
 	}
@@ -37,6 +40,12 @@ public class Deck implements IDeck{
 	public void cut()
 	{
 		
+	}
+
+	@Override
+	public Card draw() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

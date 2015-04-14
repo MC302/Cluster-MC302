@@ -1,4 +1,4 @@
-package deck;
+package deck.card;
 
 public interface ICard extends Comparable<Card> {
 	public int getValue();

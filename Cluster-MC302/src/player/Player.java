@@ -1,7 +1,8 @@
 package player;
 
 import java.util.Vector;
-import deck.Card;
+
+import deck.card.Card;
 
 public class Player {
 	Vector<Card> hand;
