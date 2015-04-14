@@ -1,14 +1,14 @@
 package implementation;
 
-import cards.CardNumber;
+import cards.Face;
 import cards.Suit;
 
 
 public class TrucoCard implements interfaces.deck.Card{
-	private CardNumber number;
+	private Face number;
 	private Suit suit;
 
-	public CardNumber getNumber() {
+	public Face getNumber() {
 		return number;
 	}
 
@@ -16,7 +16,7 @@ public class TrucoCard implements interfaces.deck.Card{
 		return suit;
 	}
 	
-	public TrucoCard(CardNumber number, Suit suit){
+	public TrucoCard(Face number, Suit suit){
 		this.number = number;
 		this.suit = suit;
 	}

@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-import cards.CardNumber;
+import cards.Face;
 import cards.Suit;
 
 public class TrucoDeck implements interfaces.deck.Deck{
@@ -34,7 +34,7 @@ public class TrucoDeck implements interfaces.deck.Deck{
 	public TrucoDeck(){
 		cards = new LinkedList<Card>();
 		for( Suit s : Suit.values())
-			for(CardNumber n : CardNumber.values()){
+			for(Face n : Face.values()){
 				cards.add(new TrucoCard(n,s));
 			}
 		this.shuffle();
