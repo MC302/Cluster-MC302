@@ -3,7 +3,7 @@ package manager;
 import game.IGame;
 import player.IPlayer;
 import table.ITable;
-import deck.ICard;
+import deck.card.ICard;
 import deck.IDeck;
 
 public interface IManager {
@@ -12,5 +12,7 @@ public interface IManager {
 	public void initializeStandartComponents();
 	public void drawCardForPlayer(IPlayer player);
 	public void putCardOnTable(ICard card, boolean visibility);
+	public IPlayer getPlayerInformation(IPlayer player);
 	public void endGame();
+	
 }
