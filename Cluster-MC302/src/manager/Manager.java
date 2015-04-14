@@ -18,13 +18,15 @@ public class Manager {
 		      return Manager.instance;
 	}
 	
-	public void startGame(IGame game)
+	public boolean startGame(IGame game)
 	{
 		if (this.game != null && this.game.canFinish())
 		{
 			this.game.finishGame();
 			this.game=game;
+			return true;
 		}
+		return false;
 	}
 	
 	
