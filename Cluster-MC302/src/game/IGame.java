@@ -2,5 +2,6 @@ package game;
 
 public interface IGame {
 	public boolean canFinish();
-	public void finishGame(); 
+	public void finish();
+	public void run();
 }
